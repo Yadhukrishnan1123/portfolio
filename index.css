@@ -1,0 +1,210 @@
+*{
+    font-family: "Open Sans", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;/* vh means screen nu size aayitt thanne content varaan */
+    position: relative; /* place in it normal position */    /* ----------------------------- */
+}
+
+#navbar{width: 85%;
+margin-left: 100px;
+display: flex; /* to make child element inline */ /* (nav nte child aanu ul um img um ) */
+justify-content: space-between; /* place content horizondally / akalam palikkan*/
+align-items: center;}/* place child content content vertically */
+
+
+#logo{width: 130px;}
+
+.listitem{
+    list-style: none; /* to remove list style */
+    display: inline; /* list kal inline avan vendi*/
+    margin: 20px 10px;
+    font-weight: 700;/* katti koottan */
+}
+
+#listitem:hover{color: orangered;} /* -href vannal ith work avilla. so, thazhe onnoode green koduthu-------------------------------------------------- */
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+li a:hover{
+    text-decoration: none;
+    color: green;
+}
+
+#title{
+    margin-top: 11%;
+    margin-left: 8%;
+}
+
+#title h1{font-size: 50px;
+margin-bottom: 20px;}
+
+#title a{
+    background-color: black;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 150px;
+    border-radius: 10px;
+}
+
+
+
+
+#images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0px;  
+    right: 0px;   /* ithukond aanu ee "div" inline ayitt varan */
+}
+
+.photo1{position: absolute;
+height: 100%;
+bottom: 0px;
+left: 50%;
+transform: translateX(-50%); /* ivide negative ayond aa girl left lekku move akum (translateY koduthal molilottum thazhottum pokum) */
+transition: bottom 1s, left 2s;
+}
+
+#images:hover #shape{
+    bottom: 70px;/* shape move avan ulla tag */
+}
+
+#images:hover #girl{
+    left: 40%;/* girl move avan ulla tag */
+}
+
+#about{
+    margin: 20% 8% 0 8%;
+}
+
+
+
+.heading{text-align: center;}
+
+.heading h2{font-size: 30px;}
+
+.heading p{font-size: 20px;
+color: green;}
+
+
+#content{display: grid;
+grid-template-columns: repeat(2, 1fr);/* 2 div 2 column aayitt varaan */
+gap: 2rem;/* space nu vendi */
+margin-top: 2rem;}/* space nu vendi */
+
+#contentimage img{width: 85%;}
+#contentdetails{text-align: justify;/* paragraph correct petti pole nne verum */
+font-size: 20px;
+font-weight: 600;}
+
+#information{margin-top: 2rem;/* just for a space */
+}
+.info{margin-top: 1rem;
+}
+.info span{margin-left: 1rem;}/* <!-- ivide ee span margin ullath kond aanu icon um text um thammil space vannath --> */
+
+#skill{margin: 8% 8% 0% 8%;}
+
+#skill_container{display: grid;
+grid-template-columns: repeat(2, 1fr);}
+
+#skill_image img{width: 90%;}
+
+.bar_container{
+    display: flex;
+    justify-content: space-between;
+padding: 2rem;
+align-items: center;
+position: relative;}
+
+.bar span{font-weight: 800;
+font-size: 20px;}
+
+.bar{
+    width: 100%;
+height: .5rem;
+background-color: black;
+border-radius: 5px;
+position: absolute;
+bottom: 0px;}
+
+
+#html_bar{width: 89%;
+background-color: orange;}
+
+#css_bar{width: 79%;
+    background-color: orange;}
+
+    #js_bar{width: 95%;
+        background-color: orange;}
+
+        #react_bar{width: 95%;
+            background-color: orange;}
+
+            #contact{margin: 8% 8% 0% 8%;}
+
+            #icon_set{display: flex;
+            justify-content: center;/* icons adangunna divukal center il varan */
+        margin-top: 3%;
+    align-items: center;}
+
+    .icon, .up_arrow{/* ithanu group selector */
+        width: 50px;
+    height: 50px;
+/* border: 1px solid red; */
+margin: 15px 15px;
+display: flex;  /* ee sanam venam ennale center il varollu */ /* ----------------- */
+justify-content: center;/* -------- */
+align-items: center;/* ----------- */
+/* ith 3 aanu center il varan ulla 3 item */
+border-radius: 50px;}/* width,height 50 ayond radius um 50 kodukkanam */
+
+.icon i{color: black;}
+
+.icon:hover{background-image: linear-gradient(to bottom right, yellow, rgba(137, 93, 12, 0.652));}
+
+.icon i:hover{
+    color: white;
+}
+
+.icon:hover{
+animation: shake .5s;}
+
+@keyframes shake
+{
+10%{transform: rotate(15deg);}
+20%{transform: rotate(-15deg);}
+30%{transform: rotate(15deg);}
+40%{transform: rotate(-15deg);}/* 10,20,30,40 means 4 pravashyam shake akum */
+
+
+}
+footer{
+    margin: 3rem 0px;
+}
+
+footer p{
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+
+}
+.up_arrow{
+    background-image: linear-gradient(to bottom right, yellow, rgba(137, 93, 12, 0.652));
+    float: right;
+    margin: 13px 50px 50px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+

@@ -1,0 +1,19 @@
+div{position: relative;
+    margin-left: 50%;
+    margin-top: 10%;}
+#k{position: absolute;
+left: 0;
+top: 0
+;}
+
+div:hover #k{animation: move 2s;}
+
+
+@keyframes move{50%
+{transform: translatex(-10%);}}
+
+div:hover #l{animation: moove 2s;}
+
+@keyframes moove{
+    50%{transform: translateY(-10%);}
+}
